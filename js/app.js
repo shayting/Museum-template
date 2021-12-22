@@ -58,3 +58,13 @@ var swiper3 = new Swiper(".mySwiper", {
     type: "fraction",
   },
 });
+
+// wow.js
+var wow = new WOW({
+  boxClass: "wow", // default
+  animateClass: "animate__animated",
+  offset: 0, // default
+  mobile: true, // default
+  live: true, // default
+});
+wow.init();

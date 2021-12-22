@@ -92,6 +92,22 @@ a {
   margin: 0 60px;
 }
 
+.logo-sm {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 72px;
+  }
+}
+
 .swiper {
   position: absolute;
   top: 0;
@@ -143,12 +159,30 @@ a {
   background: url("../../images/slide-mobile01.jpg") no-repeat center/cover;
 }
 
+@media (min-width: 992px) {
+  #slide-1 {
+    background: url("../../images/slide01.jpg") no-repeat center/cover;
+  }
+}
+
 #slide-2 {
   background: url("../../images/slide-mobile02.jpg") no-repeat center/cover;
 }
 
+@media (min-width: 992px) {
+  #slide-2 {
+    background: url("../../images/slide02.jpg") no-repeat center/cover;
+  }
+}
+
 #slide-3 {
   background: url("../../images/slide-mobile03.jpg") no-repeat center/cover;
+}
+
+@media (min-width: 992px) {
+  #slide-3 {
+    background: url("../../images/slide03.jpg") no-repeat center/cover;
+  }
 }
 
 .swiper-button-next {
@@ -722,4 +756,168 @@ a {
   line-height: 1.5;
   padding-left: 30px;
   border-left: 3px solid #080808;
+}
+
+.about {
+  padding: 80px 20px;
+  background: #fffbf7;
+}
+
+.about-title {
+  text-align: center;
+  padding: 0 40px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1025px) {
+  .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.about-content .content-img img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.about-content .content-text {
+  padding: 10px 10px 10px 30px;
+}
+
+.about-content .content-text ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-content .content-text li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.about-content .content-text li img {
+  width: 44px;
+  height: 44px;
+  margin-right: 36px;
+}
+
+.about-content .content-text li .about-text {
+  margin-top: 10px;
+}
+
+.about-content .content-text li h5 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.about-content .content-text li p {
+  color: #212529;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.about-content .content-text li p a {
+  color: #080808;
+  text-decoration: underline;
+}
+
+.event {
+  padding: 80px 20px;
+}
+
+.event-title {
+  margin-bottom: 60px;
+  padding-right: 72px;
+}
+
+.event-title h6 {
+  margin-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  opacity: 0.5;
+  color: #212529;
+}
+
+.event-box .box-img {
+  position: relative;
+  margin-bottom: 33px;
+}
+
+.event-box .box-img .box-info {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.event-box .box-img .box-info span {
+  display: none;
+}
+
+.box-content {
+  text-align: center;
+}
+
+.box-content h4 {
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.box-content h4 a {
+  font-size: 25px;
+  color: #080808;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  border: 0;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.box-content h4 a:hover {
+  border-bottom: solid 2px #080808;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+p {
+  margin-bottom: 84px;
+}
+
+.eventImg {
+  width: 100%;
+}
+
+.infoImg {
+  width: 17px;
+  height: 17px;
 }

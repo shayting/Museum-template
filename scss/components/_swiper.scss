@@ -42,12 +42,21 @@
 }
 #slide-1 {
   background: url("../../images/slide-mobile01.jpg") no-repeat center/cover;
+  @include lg {
+    background: url("../../images/slide01.jpg") no-repeat center/cover;
+  }
 }
 #slide-2 {
   background: url("../../images/slide-mobile02.jpg") no-repeat center/cover;
+  @include lg {
+    background: url("../../images/slide02.jpg") no-repeat center/cover;
+  }
 }
 #slide-3 {
   background: url("../../images/slide-mobile03.jpg") no-repeat center/cover;
+  @include lg {
+    background: url("../../images/slide03.jpg") no-repeat center/cover;
+  }
 }
 .swiper-button-next {
   left: 15px;
@@ -64,7 +73,7 @@
   }
 }
 .swiper-pagination {
-  z-index: -1!important;
+  z-index: -1 !important;
   display: none;
   width: 100px !important;
   height: 2px !important;
@@ -87,7 +96,7 @@
 .swiper-pagination-2 {
   display: none;
   position: absolute;
-  bottom:34px;
+  bottom: 34px;
   left: 170px;
   height: 30px;
   width: 200px;
@@ -95,12 +104,12 @@
   @include md {
     display: block;
   }
-  .swiper-pagination-current{
+  .swiper-pagination-current {
     position: absolute;
     left: -130px;
     color: $secondary;
   }
-  .swiper-pagination-total{
+  .swiper-pagination-total {
     position: absolute;
     left: 5px;
     color: $secondary;
