@@ -1,0 +1,28 @@
+.inspiration {
+  background-color: $bg-light;
+  padding: 80px 0;
+  text-align: center;
+  .inspiration-title {
+    padding: 10px;
+    margin-bottom: 60px;
+  }
+}
+.inspiration-content {
+  padding: 0 10px;
+  .inspiration-box {
+    &:nth-child(2) {
+      margin: 30px 0;
+    }
+    h6 {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    p {
+      opacity: 0.7;
+      color: $gray;
+      padding: 0 22px;
+      line-height: 1.5;
+    }
+  }
+}
