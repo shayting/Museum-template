@@ -20,3 +20,9 @@
     @content;
   }
 }
+
+@mixin xl2 {
+  @media (min-width:1320px){
+    @content
+  }
+}

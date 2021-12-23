@@ -1,6 +1,9 @@
 .about {
   padding: 80px 20px;
   background: $bg-light;
+  @include xl {
+    padding: 80px 120px;
+  }
 }
 
 .about-title {

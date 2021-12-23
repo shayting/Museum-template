@@ -17,6 +17,7 @@
     position: relative;
     margin-bottom: 33px;
     .box-info {
+      transition: width 0.25s ease-in-out;
       position: absolute;
       bottom: 30px;
       right: 30px;
@@ -26,9 +27,27 @@
       width: 40px;
       height: 40px;
       background-color: white;
-      border-radius: 50%;
-      span {
+      border-radius: 40px;
+      img {
+        z-index: 2;
+      }
+      &:hover {
+        width: 168px;
+        background: $primary;
+        text-align: center;
+      }
+      &:hover span {
+        display: block;
+      }
+      &:hover img {
         display: none;
+      }
+      span {
+        font-size: 14px;
+        width: auto;
+        padding: 0 20px;
+        display: none;
+        text-overflow: none;
       }
     }
   }
@@ -43,8 +62,7 @@
       color: $secondary;
       transform: scaleX(0);
       transform-origin: 0% 50%;
-      border: 0;
-      transition: transform 0.4s ease-in-out;
+      transition: transform 0.2s ease-in-out;
       &:hover {
         border-bottom: solid 2px $secondary;
         transform: scaleX(1);

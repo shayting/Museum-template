@@ -702,9 +702,8 @@ h2 {
 }
 
 #aside .aside-content {
-  height: 526px;
+  height: 90%;
   display: none;
-  overflow-y: scroll;
 }
 
 #aside .aside-content .aside-content-inner {
@@ -713,7 +712,7 @@ h2 {
 
 #aside .aside-content .aside-content-inner img {
   width: 100%;
-  margin: 5px 0 26px;
+  margin: 50px 0 26px;
 }
 
 #aside .aside-content .aside-content-inner p {
@@ -731,7 +730,12 @@ h2 {
 
 @media (min-width: 992px) {
   #aside .aside-content {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -761,6 +765,12 @@ h2 {
 .about {
   padding: 80px 20px;
   background: #fffbf7;
+}
+
+@media (min-width: 1200px) {
+  .about {
+    padding: 80px 120px;
+  }
 }
 
 .about-title {
@@ -858,6 +868,8 @@ h2 {
 }
 
 .event-box .box-img .box-info {
+  -webkit-transition: width 0.25s ease-in-out;
+  transition: width 0.25s ease-in-out;
   position: absolute;
   bottom: 30px;
   right: 30px;
@@ -873,11 +885,33 @@ h2 {
   width: 40px;
   height: 40px;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 40px;
+}
+
+.event-box .box-img .box-info img {
+  z-index: 2;
+}
+
+.event-box .box-img .box-info:hover {
+  width: 168px;
+  background: #94ffc4;
+  text-align: center;
+}
+
+.event-box .box-img .box-info:hover span {
+  display: block;
+}
+
+.event-box .box-img .box-info:hover img {
+  display: none;
 }
 
 .event-box .box-img .box-info span {
+  font-size: 14px;
+  width: auto;
+  padding: 0 20px;
   display: none;
+  text-overflow: none;
 }
 
 .box-content {
@@ -896,11 +930,10 @@ h2 {
           transform: scaleX(0);
   -webkit-transform-origin: 0% 50%;
           transform-origin: 0% 50%;
-  border: 0;
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 .box-content h4 a:hover {
