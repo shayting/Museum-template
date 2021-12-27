@@ -1336,3 +1336,60 @@ h2 {
   opacity: 0.5;
   color: #212529;
 }
+
+.video {
+  position: relative;
+  padding: 120px 0px;
+  width: 100%;
+}
+
+.video .bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.video .overlay {
+  background: #000;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.video .video-title {
+  text-align: center;
+  padding: 10px;
+  margin: 50px 0;
+  color: white;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.video .video-title h2 {
+  font-size: 42px;
+}
+
+@media (min-width: 768px) {
+  .video .video-title h2 {
+    font-size: 52px;
+  }
+}
+
+@media (min-width: 992px) {
+  .video .video-title h2 {
+    font-size: 72px;
+  }
+}
+
+.video .video-title h6 {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,44 @@
+.video {
+  position: relative;
+  padding: 120px 0px;
+  width: 100%;
+  .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  .overlay {
+    background: #000;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  .video-title {
+    text-align: center;
+    padding: 10px;
+    margin: 50px 0;
+    color: white;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    h2 {
+      font-size: 42px;
+      @include md {
+        font-size: 52px;
+      }
+      @include lg {
+        font-size: 72px;
+      }
+    }
+    h6 {
+      margin-bottom: 30px;
+    }
+  }
+}
