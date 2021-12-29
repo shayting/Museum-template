@@ -4,13 +4,6 @@
 .event-title {
   margin-bottom: 60px;
   padding: 12px;
-  h6 {
-    margin-bottom: 10px;
-    font-weight: 400;
-    letter-spacing: 3px;
-    opacity: 0.5;
-    color: $gray;
-  }
 }
 .event-content {
   @include md {
