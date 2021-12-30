@@ -74,6 +74,7 @@
   }
   .expand {
     display: none;
+    transition: 0.25s;
     p {
       margin: 20px 0 40px;
     }
