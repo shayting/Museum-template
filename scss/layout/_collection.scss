@@ -1,5 +1,5 @@
 .collection {
-  padding: 80px 0;
+  padding: 80px 10px;
 }
 
 .collection-title {
@@ -7,4 +7,43 @@
   h2 {
     font-size: 46px;
   }
+}
+.wrap {
+  width: 50%;
+}
+#photoSlide .swiper-slide img {
+  max-width: 100%;
+}
+.collection-content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  #photoSlide {
+    width: 50%;
+  }
+  #titleSlide {
+    height: 100%;
+    width: 50%;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .swiper-slide {
+      height: 30px;
+      span {
+        display: inline-block;
+        font-size: 17px;
+        writing-mode: vertical-lr;
+      }
+      h3 {
+        padding-left: 10px;
+        font-size: 28px;
+        border-left:3px solid $secondary;
+      }
+    }
+  }
+}
+
+.collection-content {
+  display: flex;
 }

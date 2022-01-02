@@ -1,5 +1,8 @@
 .event {
   padding: 80px 10px;
+  @include xl {
+    padding: 80px 120px;
+  }
 }
 .event-title {
   margin-bottom: 60px;

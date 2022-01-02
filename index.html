@@ -85,7 +85,7 @@
         </div>
     </div>
     <!-- 背景swiper -->
-    <div class="swiper">
+    <div id="bgSlide" class="swiper">
       <div class="swiper-wrapper">
         <div id="slide-1" class="swiper-slide">
         </div>
@@ -96,7 +96,7 @@
       </div>
     </div>
     <!-- 文字swiper -->
-    <div class="mySwiper">
+    <div id="textSlide" class="mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide slide-text">
           <h1 class="font-cinzel">MUSEUMS AND GALLERIES</h1>
@@ -337,15 +337,45 @@
 
   <!-- collection -->
   <section class="collection">
-    <div class="collection-title">
-      <h6>Art Collection</h6>
-      <h2 class="font-cinzel">History of Barnes</h2>
-    </div>
     <div class="collection-content">
-      <div class="slide-wrap">
-        <div class="slide"><img src="./images/" alt=""></div>
-        <div class="slide"><img src="./images/" alt=""></div>
-        <div class="slide"><img src="./images/" alt=""></div>
+      <div class="wrap">
+        <div id="titleSlide" class="swiper">
+          <div class="collection-title">
+            <h6>Art Collection</h6>
+            <h2 class="font-cinzel">History of Barnes</h2>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <span class="font-cinzel">01</span>
+              <h3 class="font-cinzel">VENUS<br>DE MILO</h3>
+            </div>
+            <div class="swiper-slide">
+              <span class="font-cinzel">02</span>
+              <h3 class="font-cinzel">Les Demoiselles<br>d'Avignon</h3>
+            </div>
+            <div class="swiper-slide">
+              <span class="font-cinzel">03</span>
+              <h3 class="font-cinzel">MONA<br>LISA</h3>
+            </div>
+            <div class="swiper-slide">
+              <span class="font-cinzel">04</span>
+              <h3 class="font-cinzel">L'Arlesienne:<br>Madame Ginoux</h3>
+            </div>
+            <div class="swiper-slide">
+              <span class="font-cinzel">05</span>
+              <h3 class="font-cinzel">Cuckoo<br>Clocks</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="photoSlide" class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/art-slide01.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/art-slide03.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/art-slide04.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/art-slide05.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/art-slide01.jpg" alt=""></div>
+        </div>
       </div>
     </div>
   </section>
@@ -363,7 +393,6 @@
     </div>
 
   </section>
-
   <!-- News -->
   <section class="news">
     <div class="news-title">
@@ -401,22 +430,57 @@
       </div>
     </div>
   </section>
-
   <!-- Subscribe -->
   <section class="subscribe">
     <div class="subscribe-box">
-      <h6>Subscribe Newsletter</h6>
-      <h2>Sign up to get the latest news</h2>
-      <div class="email-input">
-        <input type="text" placeholder="Enter your e-mail address">
-        <input type="button">SIGN UP
+      <div class="subscribe-form">
+        <h6>Subscribe Newsletter</h6>
+        <h2>Sign up to get the latest news</h2>
+        <div class="email-input">
+          <input type="email" placeholder="Enter your e-mail address">
+          <input type="submit" value="SIGN UP">
+        </div>
+        <span>Will be used in accordance with our <a href="#">Privacy Policy</a></span>
       </div>
-      <span>Will be used in accordance with our Privacy Policy</span>
-    </div>
-    <div class="subscribe-img">
-      <img src="./images/newsletter-image.png" alt="">
+      <div class="subscribe-img">
+        <img src="./images/newsletter-image.png" alt="">
+      </div>
     </div>
   </section>
+  <!-- footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-box">
+        <h6 class="font-cinzel">ABOUT MUSEUM</h6>
+        <ul id="about-list">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">National work</a></li>
+          <li><a href="#">International work</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h6 class="font-cinzel">CONNECT US</h6>
+        <ul id="connect-list">
+          <li><a href="#"><i class="fab fa-facebook-f"></i>/wandau-uk</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i>/wandau-museum</a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i>/wandau-tv</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h6 class="font-cinzel">VISIT US NOW</h6>
+        <ul id="visit-list">
+          <li>Cromwell Road New Town SW7</li>
+          <li><strong>London-England</strong></li>
+          <li><i class="fas fa-info-circle"></i>+44 (0)20 7942 2000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy;2021 Wandau | Art & History</span>
+      <span>Site created by <a href="#">themezinho</a></span>
+    </div>
+  </footer>
 
 
 

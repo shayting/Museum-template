@@ -13,6 +13,7 @@
 }
 .about-content {
   @include lg2 {
+    padding: 0 10px;
     display: flex;
   }
   .content-img {

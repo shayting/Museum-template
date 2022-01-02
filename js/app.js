@@ -1,31 +1,19 @@
 // swiper - background
-var swiper = new Swiper(".swiper", {
+const bgSlide = new Swiper("#bgSlide", {
   slidesPerView: 1,
   // loop: true,
   autoplay: {
     delay: 8000,
     disableOnInteraction: false,
   },
-  direction: getDirection(),
+  direction: "vertical",
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  on: {
-    resize: function () {
-      swiper.changeDirection(getDirection());
-    },
-  },
 });
-
-function getDirection() {
-  var windowWidth = window.innerWidth;
-  var direction = "vertical";
-  return direction;
-}
-
 // swiper - text
-var swiper2 = new Swiper(".mySwiper", {
+const textSlide = new Swiper("#textSlide", {
   slidesPerView: 1,
   // loop: true,
   autoplay: {
@@ -38,12 +26,12 @@ var swiper2 = new Swiper(".mySwiper", {
   },
   pagination: {
     el: ".swiper-pagination",
-    type: "progressbar"
-  }
+    type: "progressbar",
+  },
 });
 
-// page 
-var swiper3 = new Swiper(".mySwiper", {
+// page
+const swiper3 = new Swiper(".mySwiper", {
   // loop: true,
   autoplay: {
     delay: 8000,
@@ -58,6 +46,35 @@ var swiper3 = new Swiper(".mySwiper", {
     type: "fraction",
   },
 });
+
+// collection-slide
+const photoSlide = new Swiper("#photoSlide", {
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+const titleSlide = new Swiper("#titleSlide", {
+  slidesPerView: 3,
+  // spaceBetween: 30,
+  direction: "vertical",
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+
+let slides = titleSlide.slides;
+console.log(titleSlide.slides)
+// if (titleSlide.realIndex !== 0) {}
+// // for (let i = 0; i < slides.length; i++) {
+// //   if () {
+// //     slides[i].style.color = "red";
+// //   }
+// // }
 
 // wow.js
 var wow = new WOW({
