@@ -17,7 +17,7 @@
 }
 
 .remind-box {
-  transition: 0.25s ease-in-out;
+  // transition: 0.25s ease-in-out;
   position: relative;
   @include md {
     width: 50%;
@@ -58,12 +58,14 @@
   width: 100%;
   background: #fff;
   padding: 30px 0;
+  overflow: hidden;
   @include md {
     padding: 50px 10%;
   }
   strong {
     display: block;
     margin-bottom: 20px;
+    font-weight: 600;
   }
   h4 {
     font-size: 26px;

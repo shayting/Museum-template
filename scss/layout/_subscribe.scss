@@ -2,10 +2,14 @@
   background: $primary;
   padding:0 5%;
   h2 {
-    font: 34px;
+    letter-spacing: -2px;
+    font-size: 34px;
     margin-bottom: 30px;
     @include md {
       font-size: 48px;
+    }
+    @include lg {
+      font-size: 72px;
     }
   }
   p {
@@ -14,6 +18,9 @@
   a {
     color: $secondary;
     text-decoration: underline;
+  }
+  h6{
+    opacity: 1;
   }
   .subscribe-box {
     width: 100%;
@@ -25,7 +32,7 @@
       padding: 100px 10px;
     }
     @include xl {
-      padding: 100px 10%;
+      padding: 100px 0;
     }
     .subscribe-form {
       width: 100%;

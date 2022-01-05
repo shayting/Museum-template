@@ -1,5 +1,5 @@
 .about {
-  padding: 80px 20px;
+  padding: 80px 10px;
   background: $bg-light;
   @include xl {
     padding: 80px 120px;
@@ -12,8 +12,8 @@
   margin-bottom: 60px;
 }
 .about-content {
+  padding: 0 10px;
   @include lg2 {
-    padding: 0 10px;
     display: flex;
   }
   .content-img {
@@ -24,7 +24,10 @@
     }
   }
   .content-text {
-    padding:10px 10px 10px 30px;
+    padding: 10px 0;
+    @include lg2 {
+      padding: 10px 30px;
+    }
     ul{
       height: 100%;
       display: flex;
