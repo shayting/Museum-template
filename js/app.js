@@ -64,16 +64,19 @@ const titleSlide = new Swiper("#title-slide", {
     delay: 2500,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    // when window width is >= 320px
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  }
 });
 
 let slides = titleSlide.slides;
-console.log(titleSlide.slides)
-// if (titleSlide.realIndex !== 0) {}
-// // for (let i = 0; i < slides.length; i++) {
-// //   if () {
-// //     slides[i].style.color = "red";
-// //   }
-// // }
+console.log(slides)
 
 // wow.js
 var wow = new WOW({

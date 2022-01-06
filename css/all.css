@@ -1391,8 +1391,20 @@ h6 {
 }
 
 .collection-content #titleSlide #title-slide {
-  height: 300px;
+  height: 200px;
   display: none;
+}
+
+@media (min-width: 768px) {
+  .collection-content #titleSlide #title-slide {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .collection-content #titleSlide #title-slide {
+    height: 300px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1403,6 +1415,9 @@ h6 {
 
 .collection-content #titleSlide .swiper-slide {
   height: 30px;
+  color: #212529;
+  opacity: 0.3;
+  font-weight: 500;
 }
 
 .collection-content #titleSlide .swiper-slide span {
@@ -1414,9 +1429,15 @@ h6 {
 }
 
 .collection-content #titleSlide .swiper-slide h3 {
+  display: inline-block;
   padding-left: 10px;
   font-size: 28px;
   border-left: 3px solid #080808;
+}
+
+.collection-content #titleSlide .swiper-slide.swiper-slide-active {
+  color: #212529;
+  opacity: 1;
 }
 
 @media (min-width: 992px) {
