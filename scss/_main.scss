@@ -10,6 +10,17 @@ a {
   text-decoration: none;
 }
 
+// 隱藏scrollbar
+html {
+  overflow: -moz-hidden-unscrollable;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
 .fs-14 {
   font-size: 14px;
 }
