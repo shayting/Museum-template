@@ -32,6 +32,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  transition: .25s ease-in-out;
   &:hover {
     background-color: $secondary;
     color: $primary;
@@ -62,6 +63,7 @@
 .swiper-button-next {
   left: 15px;
   top: calc(100vh - 70px);
+  z-index: 0 !important;
   @include md {
     left: calc(100vw - 196px);
   }
@@ -69,6 +71,7 @@
 .swiper-button-prev {
   left: 90px;
   top: calc(100vh - 70px);
+  z-index: 0 !important;
   @include md {
     left: calc(100vw - 124px);
   }

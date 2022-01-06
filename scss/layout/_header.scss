@@ -10,6 +10,9 @@
       padding: 30px 60px;
     }
   }
+  a{
+    transition: .25s ease-in-out;
+  }
 }
 .navbar-menu {
   display: none;
@@ -188,6 +191,7 @@
   position: absolute;
   top: 0;
   left: -75vw;
+  z-index: 9999;
   @include md {
     padding: 30px 60px;
     width: 50vw;

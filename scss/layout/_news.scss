@@ -16,7 +16,7 @@
   padding: 0 12px;
   margin-bottom: 80px;
   width: 100%;
-  @include md {
+  @include lg {
     display: flex;
     margin-bottom: 150px;
     padding:0 5%;
@@ -26,10 +26,21 @@
     &:last-child {
       text-align: end;
     }
+    .right-txt{
+      text-align: right;
+    }
+    .news-text{
+      width: 50%;
+    }
+    .news-img {
+      width: 50%;
+      img{
+        margin-bottom: 0;
+        vertical-align: bottom;
+      }
+    }
   }
-  .news-text{
-    width: 55%;
-  }
+  
   img{
     height: auto;
     max-width: 100%;
@@ -42,7 +53,10 @@
   }
   h3{
     margin: 10px 0 30px 0;
-    font-size: 38px;
+    font-size: 27px;
+    @include xl {
+      font-size: 54px;
+    }
   }
   p{
     width: 100%;

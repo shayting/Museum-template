@@ -56,9 +56,8 @@ const photoSlide = new Swiper("#photoSlide", {
     disableOnInteraction: false,
   },
 });
-const titleSlide = new Swiper("#titleSlide", {
+const titleSlide = new Swiper("#title-slide", {
   slidesPerView: 3,
-  // spaceBetween: 30,
   direction: "vertical",
   loop: true,
   autoplay: {
