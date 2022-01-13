@@ -180,32 +180,32 @@ h6 {
 }
 
 #slide-1 {
-  background: url("../../images/slide-mobile01.jpg") no-repeat center/cover;
+  background: url("../images/slide-mobile01.jpg") no-repeat center/cover;
 }
 
 @media (min-width: 992px) {
   #slide-1 {
-    background: url("../../images/slide01.jpg") no-repeat center/cover;
+    background: url("../images/slide01.jpg") no-repeat center/cover;
   }
 }
 
 #slide-2 {
-  background: url("../../images/slide-mobile02.jpg") no-repeat center/cover;
+  background: url("../images/slide-mobile02.jpg") no-repeat center/cover;
 }
 
 @media (min-width: 992px) {
   #slide-2 {
-    background: url("../../images/slide02.jpg") no-repeat center/cover;
+    background: url("../images/slide02.jpg") no-repeat center/cover;
   }
 }
 
 #slide-3 {
-  background: url("../../images/slide-mobile03.jpg") no-repeat center/cover;
+  background: url("../images/slide-mobile03.jpg") no-repeat center/cover;
 }
 
 @media (min-width: 992px) {
   #slide-3 {
-    background: url("../../images/slide03.jpg") no-repeat center/cover;
+    background: url("../images/slide03.jpg") no-repeat center/cover;
   }
 }
 
@@ -792,6 +792,60 @@ h6 {
   line-height: 1.5;
   padding-left: 30px;
   border-left: 3px solid #080808;
+}
+
+#play {
+  cursor: pointer;
+  display: none;
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  bottom: 145px;
+  right: 345px;
+}
+
+@media (min-width: 992px) {
+  #play {
+    display: block;
+  }
+}
+
+#play-circle {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  right: 280px;
+  -webkit-animation: rotation 10s infinite linear;
+          animation: rotation 10s infinite linear;
+}
+
+@media (min-width: 992px) {
+  #play-circle {
+    display: block;
+  }
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
 }
 
 .about {

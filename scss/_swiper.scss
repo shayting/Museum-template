@@ -43,21 +43,21 @@
   }
 }
 #slide-1 {
-  background: url("../../images/slide-mobile01.jpg") no-repeat center/cover;
+  background: url("../images/slide-mobile01.jpg") no-repeat center/cover;
   @include lg {
-    background: url("../../images/slide01.jpg") no-repeat center/cover;
+    background: url("../images/slide01.jpg") no-repeat center/cover;
   }
 }
 #slide-2 {
-  background: url("../../images/slide-mobile02.jpg") no-repeat center/cover;
+  background: url("../images/slide-mobile02.jpg") no-repeat center/cover;
   @include lg {
-    background: url("../../images/slide02.jpg") no-repeat center/cover;
+    background: url("../images/slide02.jpg") no-repeat center/cover;
   }
 }
 #slide-3 {
-  background: url("../../images/slide-mobile03.jpg") no-repeat center/cover;
+  background: url("../images/slide-mobile03.jpg") no-repeat center/cover;
   @include lg {
-    background: url("../../images/slide03.jpg") no-repeat center/cover;
+    background: url("../images/slide03.jpg") no-repeat center/cover;
   }
 }
 .swiper-button-next {

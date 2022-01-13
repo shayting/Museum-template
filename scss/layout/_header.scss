@@ -292,3 +292,36 @@
     border-left: 3px solid $secondary;
   }
 }
+
+#play{
+  cursor: pointer;
+  display: none;
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  bottom: 145px;
+  right: 345px;
+  @include lg {
+    display: block;
+  }
+}
+#play-circle{
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  right: 280px;
+  animation: rotation 10s infinite linear;
+  @include lg {
+    display: block;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(359deg);
+  }
+}
